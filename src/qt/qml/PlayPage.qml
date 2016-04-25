@@ -59,18 +59,18 @@ Page {
         anchors.bottom: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
         color: showPad ? "#4E2865" : "transparent"
-        opacity: showPad ? 1.0 : 0.5
+        opacity: showPad ? 1.0 : 0.8
         //[startx, starty, endx, endy, key]
         //position in absolute value
         //keyname, x,y,width, height left or right, key, image
         property var buttonsPositions: [
-            ["L", 2.25, 21.25, 11, 5, "left", Qt.Key_A, "./img/LButton.png"],
-            ["R", 2.25, 21.25, 11, 5, "right", Qt.Key_S, "./img/RButton.png"],
-            ["A", 2.5, 5.5, 6.5, 6.5, "right", Qt.Key_Z, "./img/AButton.png"],
-            ["B", 9, 3, 6.5, 6.5, "right", Qt.Key_X, "./img/BButton.png"],
-            ["Start", 19, 3, 3.5, 3.5, "right", Qt.Key_Return, "./img/circleButton.png"],
-            ["Select", 24.5, 3, 3.5, 3.5, "right", Qt.Key_Backspace, "./img/circleButton.png"],
-            ["Direct", 3.5, 5, 12, 12, "left", 0, "./img/directionButtons.png"]
+            ["L", 1.5, 22, 10, 5, "left", Qt.Key_A, "./img/LButton.png"],
+            ["R", 1.5, 22, 10, 5, "right", Qt.Key_S, "./img/RButton.png"],
+            ["A", 14, 16, 6.5, 6.5, "right", Qt.Key_Z, "./img/AButton.png"],
+            ["B", 18, 8, 6.5, 6.5, "right", Qt.Key_X, "./img/BButton.png"],
+            ["Start", 24, 3, 8, 4, "right", Qt.Key_Return, "./img/circleButton.png"],
+            ["Select", 34, 3, 8, 4, "right", Qt.Key_Backspace, "./img/circleButton.png"],
+            ["Direct", 8, 3, 24, 24, "left", 0, "./img/directionButtons.png"]
         ]
         property var directRatio: 0.31;
         property var lastKeyStatus: [false, false, false, false, false, false, false, false, false, false]
